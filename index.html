@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Safe Route Finder</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Safe Route Finder</h1>
+        <p class="subtitle">
+            Safe route is shown in <span class="safe-text">green</span>
+            and unsafe route is shown in <span class="unsafe-text">red</span>
+        </p>
+
+        <div class="input-box">
+            <input type="text" id="start" placeholder="Enter start location">
+            <input type="text" id="end" placeholder="Enter destination">
+            <button onclick="findRoutes()">Find Route</button>
+        </div>
+
+        <div id="message"></div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
